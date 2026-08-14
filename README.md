@@ -4,6 +4,8 @@ An iOS strength-training app where an LLM coach talks to the athlete, and a dete
 
 Built solo over three months as a single-author production codebase: 94k lines of TypeScript, a 37-table Postgres schema with row-level security on every table, and a validation layer that drops model output which cannot be traced back to computed evidence.
 
+It is a complete application rather than a demo of one idea — 39 screens covering workout logging, AI session generation, coach chat, programs, recovery and body measures, nutrition, a social feed with friends and direct messages, leaderboards, referrals and a subscription paywall — running against live Supabase infrastructure with all 42 migrations applied in production. The documents below concentrate on the parts that were hard rather than the parts that were many.
+
 **Status:** pilot release candidate. The iOS production bundle exports clean and all release gates pass; Apple Developer enrollment and the EAS project link are the remaining steps before an internal TestFlight build. Nothing has shipped to testers yet — see [Release status](#release-status).
 
 `React Native` · `Expo SDK 54` · `TypeScript (strict)` · `Supabase` · `PostgreSQL` · `Deno Edge Functions` · `Claude / GPT / Gemini`
